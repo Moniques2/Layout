@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    font-family: Georgia, serif;
+}
+
+
+.layout1 {
+    width: 96%;
+    height: 95vh;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+.layout1 header {
+    background-color: #ff604d;
+}
+
+.layout1 main {
+    background-color: #90f090;
+}
+
+.layout1 footer {
+    background-color: #8d24df;
+}
+
+.layout1 header,
+.layout1 main,
+.layout1 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+
+.layout2 {
+    width: 88%;
+    height: 92vh;
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100px 1fr 100px;
+
+    grid-template-areas:
+        "header header header"
+        "nav article aside"
+        "footer footer footer";
+}
+
+.layout2 header {
+    grid-area: header;
+    background-color: #ff604d;
+}
+
+.layout2 nav {
+    grid-area: nav;
+    background-color: #d6bed9;
+}
+
+.layout2 main {
+    grid-area: article;
+    background-color: #90f090;
+}
+
+.layout2 aside {
+    grid-area: aside;
+    background-color: #f5dfb1;
+}
+
+.layout2 footer {
+    grid-area: footer;
+    background-color: #8d24df;
+}
+
+.layout2 header,
+.layout2 nav,
+.layout2 main,
+.layout2 aside,
+.layout2 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+
+
+.layout3 {
+    width: 86%;
+    height: 92vh;
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 18% 82%;
+    grid-template-rows: 100px 1fr 100px;
+
+    grid-template-areas:
+        "nav header"
+        "nav main"
+        "nav footer";
+}
+
+.layout3 nav {
+    grid-area: nav;
+    background-color: #d6bed9;
+}
+
+.layout3 header {
+    grid-area: header;
+    background-color: #ff604d;
+}
+
+.layout3 main {
+    grid-area: main;
+    background-color: #27b3ad;
+}
+
+.layout3 footer {
+    grid-area: footer;
+    background-color: #8d24df;
+}
+
+.layout3 nav,
+.layout3 header,
+.layout3 main,
+.layout3 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+
+
+.layout4 {
+    width: 86%;
+    height: 92vh;
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 18% 62% 20%;
+    grid-template-rows: 100px 1fr 100px;
+
+    grid-template-areas:
+        "nav header header"
+        "nav article aside"
+        "nav footer footer";
+}
+
+.layout4 nav {
+    grid-area: nav;
+    background-color: #d6bed9;
+}
+
+.layout4 header {
+    grid-area: header;
+    background-color: #ff604d;
+}
+
+.layout4 main {
+    grid-area: article;
+    background-color: #90f090;
+}
+
+.layout4 aside {
+    grid-area: aside;
+    background-color: #f5dfb1;
+}
+
+.layout4 footer {
+    grid-area: footer;
+    background-color: #8d24df;
+}
+
+.layout4 nav,
+.layout4 header,
+.layout4 main,
+.layout4 aside,
+.layout4 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+
+.layout5 {
+    width: 85%;
+    height: 600px;
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 50px 1fr 50px;
+
+    grid-template-areas:
+        "menu header header"
+        "menu main aside"
+        "menu footer footer";
+}
+
+.layout5 .menu {
+    grid-area: menu;
+    background-color: #d8bfdc;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.layout5 .menu a {
+    width: 45px;
+    height: 22px;
+
+    background-color: #ff5b48;
+    color: black;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 7px;
+    padding-top: 6px;
+}
+
+.layout5 header {
+    grid-area: header;
+    background-color: #ff6049;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+}
+
+.layout5 main {
+    grid-area: main;
+    background-color: #8df58b;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.layout5 .caixa-grande {
+    width: 55%;
+    height: 130px;
+
+    background-color: #add8e6;
+}
+
+.layout5 .caixas {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.layout5 .caixa {
+    width: 35%;
+    height: 88px;
+
+    background-color: #ffb3c1;
+}
+
+.layout5 aside {
+    grid-area: aside;
+    background-color: #f5dfb3;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.layout5 aside div {
+    width: 45px;
+    height: 45px;
+
+    background-color: #00e5e5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 6px;
+}
+
+.layout5 footer {
+    grid-area: footer;
+    background-color: #8a20df;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+}
+
+
+
+
+.layout6 {
+    width: 85%;
+    height: 580px;
+
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+
+    overflow: hidden;
+}
+
+.layout6 .linha {
+    display: flex;
+    align-items: center;
+}
+
+.layout6 .linha1 {
+    background-color: #e8e6f6;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.layout6 .linha1 .bolinha {
+    background-color: #a6a0d6;
+}
+
+.layout6 .linha2 {
+    background-color: #d8f5c5;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.layout6 .linha2 .bolinha {
+    background-color: #79ad59;
+}
+
+.layout6 .linha3 {
+    background-color: #f8e2e2;
+    justify-content: center;
+    gap: 5px;
+}
+
+.layout6 .linha3 .bolinha {
+    background-color: #c87378;
+}
+
+.layout6 .linha4 {
+    background-color: #f5f5d3;
+    justify-content: space-between;
+}
+
+.layout6 .linha4 .bolinha {
+    background-color: #d6db16;
+}
+
+.layout6 .linha5 {
+    background-color: #cfe2fa;
+    justify-content: space-around;
+}
+
+.layout6 .linha5 .bolinha {
+    background-color: #5482ba;
+}
+
+.layout6 .bolinha {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+}
